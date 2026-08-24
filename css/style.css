@@ -1,130 +1,531 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+/* ========================================
+   COMING SOON
+======================================== */
 
-  <meta charset="UTF-8">
+.coming-soon {
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  min-height: 100vh;
 
-  <title>iScreenMate — Coming Soon</title>
+  display: flex;
 
-  <meta
-    name="description"
-    content="iScreenMate — a fast and simple screenshot tool for macOS. Coming soon."
-  >
+  flex-direction: column;
 
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
+  justify-content: space-between;
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  padding: 42px 48px 32px;
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  >
-
-</head>
+}
 
 
-<body>
+.coming-content {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+
+}
 
 
-<main class="coming-soon">
+.coming-content .logo {
 
-  <div class="coming-content">
+  display: inline-flex;
 
+  align-items: center;
 
-    <div class="logo">
+  gap: 10px;
 
-      <span class="logo-mark">
-        i
-      </span>
+  margin-bottom: 55px;
 
-      <span class="logo-text">
-        iScreenMate
-      </span>
-
-    </div>
+}
 
 
-    <div class="coming-label">
+.coming-content .logo-mark {
 
-      <span class="coming-dot"></span>
+  width: 38px;
 
-      Coming Soon
+  height: 38px;
 
-    </div>
+  display: flex;
 
+  align-items: center;
 
-    <h1>
-      A better way to<br>
-      capture your screen.
-    </h1>
+  justify-content: center;
 
+  border-radius: 10px;
 
-    <p class="coming-description">
-      iScreenMate is a fast and simple screenshot tool
-      designed for macOS.
-    </p>
+  background: #111;
 
+  color: #fff;
 
-    <div class="coming-status">
-      We're working on it.
-    </div>
+  font-size: 22px;
 
+  font-weight: 700;
 
-  </div>
+}
 
 
-  <footer class="coming-footer">
+.coming-content .logo-text {
 
-    <div class="footer-links">
+  font-size: 21px;
 
-      <a href="privacy.html">
-        Privacy
-      </a>
+  font-weight: 600;
 
-      <a href="terms.html">
-        Terms
-      </a>
+  letter-spacing: -0.03em;
 
-      <a href="license.html">
-        License
-      </a>
-
-      <a href="refunds.html">
-        Refunds
-      </a>
-
-      <a href="support.html">
-        Support
-      </a>
-
-    </div>
+}
 
 
-    <div class="copyright">
-      © 2026 iScreenMate
-    </div>
+.coming-label {
 
-  </footer>
+  display: inline-flex;
 
-</main>
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 13px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: var(--text-secondary);
+
+}
 
 
-</body>
-</html>
+.coming-dot {
+
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #111;
+
+}
+
+
+.coming-content h1 {
+
+  margin-top: 27px;
+
+  font-size: clamp(48px, 7vw, 88px);
+
+  line-height: 0.98;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 600;
+
+}
+
+
+.coming-description {
+
+  max-width: 500px;
+
+  margin: 28px auto 0;
+
+  color: var(--text-secondary);
+
+  font-size: 18px;
+
+  line-height: 1.65;
+
+}
+
+
+.coming-status {
+
+  margin-top: 32px;
+
+  color: var(--text-muted);
+
+  font-size: 14px;
+
+}
+
+
+.coming-footer {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border-top: 1px solid var(--border);
+
+  padding-top: 22px;
+
+}
+
+
+.footer-links {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+}
+
+
+.footer-links a {
+
+  color: var(--text-muted);
+
+  font-size: 13px;
+
+  transition: color 0.2s ease;
+
+}
+
+
+.footer-links a:hover {
+
+  color: var(--text-primary);
+
+}
+
+
+.copyright {
+
+  color: var(--text-muted);
+
+  font-size: 13px;
+
+}
+
+
+@media (max-width: 700px) {
+
+  .coming-soon {
+
+    padding: 30px 22px 24px;
+
+  }
+
+
+  .coming-content .logo {
+
+    margin-bottom: 40px;
+
+  }
+
+
+  .coming-content h1 {
+
+    font-size: 48px;
+
+  }
+
+
+  .coming-description {
+
+    font-size: 16px;
+
+  }
+
+
+  .coming-footer {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+  }
+
+
+  .footer-links {
+
+    justify-content: center;
+
+    gap: 14px 18px;
+
+  }
+
+}
+
+/* ========================================
+   COMING SOON
+======================================== */
+
+.coming-soon {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 42px 48px 32px;
+
+}
+
+
+.coming-content {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+
+}
+
+
+.coming-content .logo {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 55px;
+
+}
+
+
+.coming-content .logo-mark {
+
+  width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #111;
+
+  color: #fff;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+}
+
+
+.coming-content .logo-text {
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  letter-spacing: -0.03em;
+
+}
+
+
+.coming-label {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 13px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  color: var(--text-secondary);
+
+}
+
+
+.coming-dot {
+
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #111;
+
+}
+
+
+.coming-content h1 {
+
+  margin-top: 27px;
+
+  font-size: clamp(48px, 7vw, 88px);
+
+  line-height: 0.98;
+
+  letter-spacing: -0.065em;
+
+  font-weight: 600;
+
+}
+
+
+.coming-description {
+
+  max-width: 500px;
+
+  margin: 28px auto 0;
+
+  color: var(--text-secondary);
+
+  font-size: 18px;
+
+  line-height: 1.65;
+
+}
+
+
+.coming-status {
+
+  margin-top: 32px;
+
+  color: var(--text-muted);
+
+  font-size: 14px;
+
+}
+
+
+.coming-footer {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  border-top: 1px solid var(--border);
+
+  padding-top: 22px;
+
+}
+
+
+.footer-links {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+}
+
+
+.footer-links a {
+
+  color: var(--text-muted);
+
+  font-size: 13px;
+
+  transition: color 0.2s ease;
+
+}
+
+
+.footer-links a:hover {
+
+  color: var(--text-primary);
+
+}
+
+
+.copyright {
+
+  color: var(--text-muted);
+
+  font-size: 13px;
+
+}
+
+
+@media (max-width: 700px) {
+
+  .coming-soon {
+
+    padding: 30px 22px 24px;
+
+  }
+
+
+  .coming-content .logo {
+
+    margin-bottom: 40px;
+
+  }
+
+
+  .coming-content h1 {
+
+    font-size: 48px;
+
+  }
+
+
+  .coming-description {
+
+    font-size: 16px;
+
+  }
+
+
+  .coming-footer {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+  }
+
+
+  .footer-links {
+
+    justify-content: center;
+
+    gap: 14px 18px;
+
+  }
+
+}
