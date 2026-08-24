@@ -3,16 +3,24 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>iScreenMate — Fast, Simple Screenshots for macOS</title>
+  <title>iScreenMate — Screenshots. Made Simple.</title>
 
   <meta
     name="description"
-    content="iScreenMate is a fast and lightweight screenshot tool for macOS. Capture, edit and copy screenshots in seconds."
+    content="iScreenMate is a fast and lightweight screenshot tool for macOS. Capture, copy and save screenshots in seconds."
   >
 
-  <!-- Google Fonts — DM Sans -->
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  >
+
+  <!-- DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -21,93 +29,154 @@
     rel="stylesheet"
   >
 
-  <!-- Main stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS -->
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
 
 </head>
 
 <body>
 
-  <!-- Header -->
+  <!-- ================================================
+       HEADER
+       ================================================ -->
+
   <header class="site-header">
+
     <div class="container header-inner">
 
-      <a href="index.html" class="logo">
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="iScreenMate"
+      >
         <span class="logo-mark">i</span>
         <span class="logo-text">iScreenMate</span>
       </a>
 
       <nav class="main-nav">
-        <a href="#features">Features</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
+
+        <a href="#features">
+          Features
+        </a>
+
+        <a href="#how-it-works">
+          How it works
+        </a>
+
+        <a href="support.html">
+          Support
+        </a>
+
       </nav>
 
+      <a
+        href="#download"
+        class="header-button"
+      >
+        Download
+      </a>
+
     </div>
+
   </header>
 
 
-  <!-- Hero -->
   <main>
 
+
+    <!-- ================================================
+         HERO
+         ================================================ -->
+
     <section class="hero">
+
       <div class="container">
 
         <div class="hero-content">
 
           <div class="eyebrow">
+
             <span class="eyebrow-dot"></span>
+
             Built for macOS
+
           </div>
 
+
           <h1>
-            Screenshots.<br>
+
+            Screenshots.
             <span>Made Simple.</span>
+
           </h1>
 
+
           <p class="hero-description">
+
             Capture exactly what you need, edit it instantly,
             and get back to work. iScreenMate makes screenshots
             fast, simple, and effortless.
+
           </p>
+
 
           <div class="hero-actions">
 
-            <a href="#" class="button button-primary">
+            <a
+              href="#download"
+              class="button button-primary"
+            >
               Download for Mac
             </a>
 
-            <a href="#features" class="button button-secondary">
+            <a
+              href="#features"
+              class="button button-secondary"
+            >
               Explore features
             </a>
 
           </div>
 
+
           <p class="hero-note">
-            macOS 13.0 or later
+
+            macOS 13.0 or later · Lightweight · No account required
+
           </p>
 
         </div>
 
 
-        <!-- Screenshot preview -->
+        <!-- App preview -->
+
         <div class="hero-preview">
 
           <div class="preview-window">
 
             <div class="preview-toolbar">
+
               <div class="window-dots">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
               </div>
+
 
               <div class="preview-title">
                 iScreenMate
               </div>
 
+
               <div class="toolbar-placeholder"></div>
+
             </div>
+
 
             <div class="preview-content">
 
@@ -117,9 +186,26 @@
                   1280 × 720
                 </div>
 
-                <div class="selection-crosshair">
+                <div class="selection-corners">
+
                   <span></span>
                   <span></span>
+                  <span></span>
+                  <span></span>
+
+                </div>
+
+              </div>
+
+
+              <div class="preview-toolbar-floating">
+
+                <div class="floating-button">
+                  Copy
+                </div>
+
+                <div class="floating-button">
+                  Save
                 </div>
 
               </div>
@@ -131,29 +217,45 @@
         </div>
 
       </div>
+
     </section>
 
 
-    <!-- Features -->
-    <section class="features" id="features">
+    <!-- ================================================
+         FEATURES
+         ================================================ -->
+
+    <section
+      class="features"
+      id="features"
+    >
 
       <div class="container">
 
         <div class="section-heading">
 
           <div class="eyebrow">
+
             <span class="eyebrow-dot"></span>
+
             Features
+
           </div>
 
+
           <h2>
-            Everything you need.<br>
-            Nothing you don't.
+
+            Everything you need.
+            <span>Nothing you don't.</span>
+
           </h2>
 
+
           <p>
+
             iScreenMate stays out of your way and gives you
             the tools you need exactly when you need them.
+
           </p>
 
         </div>
@@ -161,35 +263,46 @@
 
         <div class="feature-grid">
 
+
+          <!-- Capture -->
+
           <article class="feature-card feature-card-large">
 
             <div class="feature-icon">
               <span class="icon-crop"></span>
             </div>
 
-            <div class="feature-content">
+
+            <div class="feature-text">
 
               <h3>
                 Capture any area
               </h3>
 
               <p>
-                Select exactly what you want to capture with
-                a fast and precise selection tool.
+                Select exactly what you want to capture
+                with a fast and precise selection tool.
               </p>
 
             </div>
 
-            <div class="feature-visual capture-visual">
+
+            <div class="capture-visual">
 
               <div class="visual-selection">
-                <span>1240 × 780</span>
+
+                <span>
+                  1240 × 780
+                </span>
+
               </div>
 
             </div>
 
           </article>
 
+
+          <!-- Clipboard -->
 
           <article class="feature-card">
 
@@ -206,8 +319,22 @@
               and paste them anywhere.
             </p>
 
+            <div class="mini-preview clipboard-preview">
+
+              <span>
+                Screenshot copied
+              </span>
+
+              <strong>
+                ⌘ C
+              </strong>
+
+            </div>
+
           </article>
 
+
+          <!-- Shortcuts -->
 
           <article class="feature-card">
 
@@ -220,12 +347,28 @@
             </h3>
 
             <p>
-              Take screenshots without interrupting your
-              workflow using customizable keyboard shortcuts.
+              Capture your screen without interrupting
+              your workflow.
             </p>
+
+            <div class="mini-preview shortcut-preview">
+
+              <kbd>
+                Control
+              </kbd>
+
+              <span>+</span>
+
+              <kbd>
+                Q
+              </kbd>
+
+            </div>
 
           </article>
 
+
+          <!-- Save -->
 
           <article class="feature-card">
 
@@ -238,12 +381,22 @@
             </h3>
 
             <p>
-              Save screenshots to Downloads or your preferred
-              location with a single command.
+              Save screenshots to Downloads or your
+              preferred location with a single command.
             </p>
+
+            <div class="mini-preview save-preview">
+
+              <span>
+                ~/Downloads
+              </span>
+
+            </div>
 
           </article>
 
+
+          <!-- Retina -->
 
           <article class="feature-card">
 
@@ -256,11 +409,24 @@
             </h3>
 
             <p>
-              Choose between native Retina resolution and
-              standard resolution captures.
+              Choose between native Retina resolution
+              and standard resolution captures.
             </p>
 
+            <div class="mini-preview retina-preview">
+
+              <span>
+                Retina
+              </span>
+
+              <strong>
+                2×
+              </strong>
+
+            </div>
+
           </article>
+
 
         </div>
 
@@ -269,30 +435,155 @@
     </section>
 
 
-    <!-- CTA -->
-    <section class="cta">
+    <!-- ================================================
+         HOW IT WORKS
+         ================================================ -->
+
+    <section
+      class="how-it-works"
+      id="how-it-works"
+    >
 
       <div class="container">
 
-        <div class="cta-card">
+        <div class="section-heading centered">
 
-          <div class="cta-content">
+          <div class="eyebrow">
 
-            <div class="eyebrow">
-              <span class="eyebrow-dot"></span>
-              Ready when you are
+            <span class="eyebrow-dot"></span>
+
+            How it works
+
+          </div>
+
+
+          <h2>
+
+            Three seconds.
+            <span>That's it.</span>
+
+          </h2>
+
+
+          <p>
+
+            No complicated menus. No unnecessary steps.
+            Just capture what you need.
+
+          </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+          <div class="step">
+
+            <div class="step-number">
+              01
             </div>
 
-            <h2>
-              Screenshot smarter.
-            </h2>
+            <h3>
+              Select
+            </h3>
 
             <p>
-              A faster way to capture what's on your screen.
+              Activate iScreenMate and select the exact
+              area you want to capture.
             </p>
 
-            <a href="#" class="button button-primary">
-              Download for Mac
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              02
+            </div>
+
+            <h3>
+              Capture
+            </h3>
+
+            <p>
+              Fine-tune your selection and choose what
+              you want to do with the screenshot.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <div class="step-number">
+              03
+            </div>
+
+            <h3>
+              Done
+            </h3>
+
+            <p>
+              Copy it, save it, and continue working.
+              No interruptions.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================================
+         PRIVACY / LOCAL PROCESSING
+         ================================================ -->
+
+    <section class="privacy-highlight">
+
+      <div class="container">
+
+        <div class="privacy-card">
+
+          <div class="privacy-icon">
+            <span>✓</span>
+          </div>
+
+
+          <div class="privacy-content">
+
+            <div class="eyebrow">
+
+              <span class="eyebrow-dot"></span>
+
+              Private by design
+
+            </div>
+
+
+            <h2>
+              Your screenshots
+              <span>stay on your Mac.</span>
+            </h2>
+
+
+            <p>
+              iScreenMate processes screenshots locally.
+              Your captures don't need to leave your computer
+              to use the app.
+            </p>
+
+
+            <a
+              href="privacy.html"
+              class="text-link"
+            >
+              Read our Privacy Policy
+              <span>→</span>
             </a>
 
           </div>
@@ -303,42 +594,156 @@
 
     </section>
 
+
+    <!-- ================================================
+         DOWNLOAD CTA
+         ================================================ -->
+
+    <section
+      class="cta"
+      id="download"
+    >
+
+      <div class="container">
+
+        <div class="cta-card">
+
+          <div class="cta-content">
+
+            <div class="eyebrow">
+
+              <span class="eyebrow-dot"></span>
+
+              Ready when you are
+
+            </div>
+
+
+            <h2>
+              Screenshot smarter.
+            </h2>
+
+
+            <p>
+              A faster way to capture what's on your screen.
+            </p>
+
+
+            <a
+              href="#"
+              class="button button-primary"
+            >
+              Download for Mac
+            </a>
+
+
+            <p class="cta-note">
+              macOS 13.0 or later
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
   </main>
 
 
-  <!-- Footer -->
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+
   <footer class="site-footer">
 
     <div class="container">
 
       <div class="footer-main">
 
-        <a href="index.html" class="logo">
-          <span class="logo-mark">i</span>
-          <span class="logo-text">iScreenMate</span>
-        </a>
+
+        <div class="footer-brand">
+
+          <a
+            href="index.html"
+            class="logo"
+          >
+
+            <span class="logo-mark">
+              i
+            </span>
+
+            <span class="logo-text">
+              iScreenMate
+            </span>
+
+          </a>
+
+
+          <p>
+            Simple screenshots for Mac.
+          </p>
+
+        </div>
+
 
         <nav class="footer-nav">
 
-          <a href="privacy.html">
-            Privacy Policy
-          </a>
+          <div>
 
-          <a href="terms.html">
-            Terms
-          </a>
+            <h4>
+              Product
+            </h4>
 
-          <a href="support.html">
-            Support
-          </a>
+            <a href="#features">
+              Features
+            </a>
 
-          <a href="license.html">
-            License
-          </a>
+            <a href="#how-it-works">
+              How it works
+            </a>
 
-          <a href="refunds.html">
-            Refunds
-          </a>
+          </div>
+
+
+          <div>
+
+            <h4>
+              Support
+            </h4>
+
+            <a href="support.html">
+              Support
+            </a>
+
+            <a href="license.html">
+              License
+            </a>
+
+          </div>
+
+
+          <div>
+
+            <h4>
+              Legal
+            </h4>
+
+            <a href="privacy.html">
+              Privacy Policy
+            </a>
+
+            <a href="terms.html">
+              Terms
+            </a>
+
+            <a href="refunds.html">
+              Refund Policy
+            </a>
+
+          </div>
 
         </nav>
 
